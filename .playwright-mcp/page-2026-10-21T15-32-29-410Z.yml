@@ -1,0 +1,542 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - generic [ref=e5]:
+      - link "Artificial Analysis" [ref=e6] [cursor=pointer]:
+        - /url: /
+      - generic [ref=e10]:
+        - link "Premium" [ref=e174] [cursor=pointer]:
+          - /url: /pricing?source=nav&from=%2Ftools%2Fllm-price-calculator
+        - link "Log in" [ref=e175] [cursor=pointer]:
+          - /url: /login
+        - button [ref=e11] [cursor=pointer]
+        - button [ref=e12] [cursor=pointer]
+    - generic [ref=e14]:
+      - generic [ref=e15]:
+        - heading "LLM Price Calculator" [level=1] [ref=e16]
+        - paragraph [ref=e17]: Calculate and compare pricing across different LLM models. Choose between token-based or prompt-based calculations to estimate your costs.
+      - generic [ref=e18]:
+        - generic [ref=e176]:
+          - generic [ref=e270]:
+            - generic [ref=e271]:
+              - combobox [ref=e273] [cursor=pointer]:
+                - generic [ref=e274]: 26 of 441 models
+              - button "Open filters" [ref=e275] [cursor=pointer]
+            - button [ref=e276] [cursor=pointer]
+          - generic [ref=e278]:
+            - tablist [ref=e279]:
+              - tab "Tokens" [selected] [ref=e280] [cursor=pointer]
+              - tab "Words" [ref=e281] [cursor=pointer]
+            - tabpanel "Tokens" [ref=e282]:
+              - generic [ref=e283]:
+                - generic [ref=e284]:
+                  - generic [ref=e286]:
+                    - heading [level=3] [ref=e287]:
+                      - button [ref=e288] [cursor=pointer]:
+                        - paragraph [ref=e289]: Chatbot conversation
+                    - region "Chatbot conversation"
+                    - button "Apply" [ref=e292] [cursor=pointer]
+                  - generic [ref=e294]:
+                    - heading [level=3] [ref=e295]:
+                      - button [ref=e296] [cursor=pointer]:
+                        - paragraph [ref=e297]: Code generation
+                    - region "Code generation"
+                    - button "Apply" [ref=e300] [cursor=pointer]
+                  - generic [ref=e302]:
+                    - heading [level=3] [ref=e303]:
+                      - button [ref=e304] [cursor=pointer]:
+                        - paragraph [ref=e305]: Large doc processing
+                    - region "Large doc processing"
+                    - button "Apply" [ref=e308] [cursor=pointer]
+                - generic [ref=e309]:
+                  - generic [ref=e310]:
+                    - generic [ref=e311]:
+                      - text: Input tokens
+                      - button [ref=e312]
+                    - spinbutton "Input tokens" [ref=e315]: "1000"
+                  - generic [ref=e316]:
+                    - generic [ref=e317]:
+                      - text: Response tokens
+                      - button [ref=e318]
+                    - spinbutton "Response tokens" [ref=e321]: "3000"
+                  - generic [ref=e322]:
+                    - generic [ref=e323]:
+                      - text: Reasoning tokens
+                      - button [ref=e324]
+                    - spinbutton "Reasoning tokens" [ref=e327]: "5000"
+                    - paragraph [ref=e328]: Reasoning models only
+                  - generic [ref=e329]:
+                    - generic [ref=e330]:
+                      - text: API calls
+                      - button [ref=e331]
+                    - spinbutton "API calls" [ref=e334]: "1000"
+                  - button "Calculate" [ref=e335] [cursor=pointer]
+        - table [ref=e338]:
+          - rowgroup [ref=e339]:
+            - row [ref=e340]:
+              - columnheader "Model" [ref=e341]
+              - columnheader [ref=e345]:
+                - button "Input cost" [ref=e346] [cursor=pointer]
+              - columnheader [ref=e349]:
+                - button "Response cost" [ref=e350] [cursor=pointer]
+              - columnheader [ref=e353]:
+                - button "Reasoning cost" [ref=e354] [cursor=pointer]
+              - columnheader [ref=e357]:
+                - button "Cost per call" [ref=e358] [cursor=pointer]
+              - columnheader "API calls" [ref=e361]
+              - columnheader [ref=e365]:
+                - button "Total cost" [ref=e366] [cursor=pointer]
+          - rowgroup [ref=e369]:
+            - row [ref=e370]:
+              - cell [ref=e371]:
+                - generic [ref=e372]:
+                  - img "Anthropic logo" [ref=e373]
+                  - generic [ref=e374]:
+                    - link "Claude Opus 5.5 (max with fallback)" [ref=e375] [cursor=pointer]:
+                      - /url: /models/claude-opus-5-5/providers
+                    - generic [ref=e376]: Anthropic
+              - cell "< $0.01" [ref=e378]
+              - cell "$0.01" [ref=e380]
+              - cell "$0.02" [ref=e382]
+              - cell "$0.03" [ref=e384]
+              - cell "1,000" [ref=e386]
+              - cell "$34.00" [ref=e388]
+            - row [ref=e390]:
+              - cell [ref=e391]:
+                - generic [ref=e392]:
+                  - img "Anthropic logo" [ref=e393]
+                  - generic [ref=e394]:
+                    - link "Claude Sonnet 5.5 (max with fallback)" [ref=e395] [cursor=pointer]:
+                      - /url: /models/claude-sonnet-5-5/providers
+                    - generic [ref=e396]: Anthropic
+              - cell "< $0.01" [ref=e398]
+              - cell "$0.01" [ref=e400]
+              - cell "$0.01" [ref=e402]
+              - cell "$0.02" [ref=e404]
+              - cell "1,000" [ref=e406]
+              - cell "$17.00" [ref=e408]
+            - row [ref=e410]:
+              - cell [ref=e411]:
+                - generic [ref=e412]:
+                  - img "Anthropic logo" [ref=e413]
+                  - generic [ref=e414]:
+                    - link "Claude Fable 5.1 (max with fallback)" [ref=e415] [cursor=pointer]:
+                      - /url: /models/claude-fable-5-1/providers
+                    - generic [ref=e416]: Anthropic
+              - cell "$0.01" [ref=e418]
+              - cell "$0.03" [ref=e420]
+              - cell "$0.05" [ref=e422]
+              - cell "$0.09" [ref=e424]
+              - cell "1,000" [ref=e426]
+              - cell "$85.00" [ref=e428]
+            - row [ref=e430]:
+              - cell [ref=e431]:
+                - generic [ref=e432]:
+                  - img "OpenAI logo" [ref=e433]
+                  - generic [ref=e434]:
+                    - link "GPT-6 Astra (max)" [ref=e435] [cursor=pointer]:
+                      - /url: /models/gpt-6-astra/providers
+                    - generic [ref=e436]: OpenAI
+              - cell "$0.01" [ref=e438]
+              - cell "$0.03" [ref=e440]
+              - cell "$0.05" [ref=e442]
+              - cell "$0.09" [ref=e444]
+              - cell "1,000" [ref=e446]
+              - cell "$85.00" [ref=e448]
+            - row [ref=e450]:
+              - cell [ref=e451]:
+                - generic [ref=e452]:
+                  - img "Google logo" [ref=e453]
+                  - generic [ref=e454]:
+                    - link "Gemini 4 Argon (high)" [ref=e455] [cursor=pointer]:
+                      - /url: /models/gemini-4-argon/providers
+                    - generic [ref=e456]: Google
+              - cell "< $0.01" [ref=e458]
+              - cell "$0.01" [ref=e460]
+              - cell "$0.01" [ref=e462]
+              - cell "$0.02" [ref=e464]
+              - cell "1,000" [ref=e466]
+              - cell "$17.00" [ref=e468]
+            - row [ref=e470]:
+              - cell [ref=e471]:
+                - generic [ref=e472]:
+                  - img "Meta logo" [ref=e473]
+                  - generic [ref=e474]:
+                    - link "Muse Wonder (max)" [ref=e475] [cursor=pointer]:
+                      - /url: /models/muse-wonder/providers
+                    - generic [ref=e476]: Meta
+              - cell "< $0.01" [ref=e478]
+              - cell "$0.01" [ref=e480]
+              - cell "$0.02" [ref=e482]
+              - cell "$0.03" [ref=e484]
+              - cell "1,000" [ref=e486]
+              - cell "$34.00" [ref=e488]
+            - row [ref=e490]:
+              - cell [ref=e491]:
+                - generic [ref=e492]:
+                  - img "OpenAI logo" [ref=e493]
+                  - generic [ref=e494]:
+                    - link "GPT-6.1 Sol (max)" [ref=e495] [cursor=pointer]:
+                      - /url: /models/gpt-6-1-sol/providers
+                    - generic [ref=e496]: OpenAI
+              - cell "< $0.01" [ref=e498]
+              - cell "$0.01" [ref=e500]
+              - cell "$0.01" [ref=e502]
+              - cell "$0.02" [ref=e504]
+              - cell "1,000" [ref=e506]
+              - cell "$17.00" [ref=e508]
+            - row [ref=e510]:
+              - cell [ref=e511]:
+                - generic [ref=e512]:
+                  - img "SpaceXAI logo" [ref=e513]
+                  - generic [ref=e514]:
+                    - link "Grok 4.7 (xhigh)" [ref=e515] [cursor=pointer]:
+                      - /url: /models/grok-4-7/providers
+                    - generic [ref=e516]: SpaceXAI
+              - cell "< $0.01" [ref=e518]
+              - cell "< $0.01" [ref=e520]
+              - cell "$0.01" [ref=e522]
+              - cell "$0.01" [ref=e524]
+              - cell "1,000" [ref=e526]
+              - cell "$11.00" [ref=e528]
+            - row [ref=e530]:
+              - cell [ref=e531]:
+                - generic [ref=e532]:
+                  - img "Xiaomi logo" [ref=e533]
+                  - generic [ref=e534]:
+                    - link "MiMo-V2.6-Pro" [ref=e535] [cursor=pointer]:
+                      - /url: /models/mimo-v2-6-pro/providers
+                    - generic [ref=e536]: Xiaomi
+              - cell "< $0.01" [ref=e538]
+              - cell "< $0.01" [ref=e540]
+              - cell "< $0.01" [ref=e542]
+              - cell "< $0.01" [ref=e544]
+              - cell "1,000" [ref=e546]
+              - cell "$1.74" [ref=e548]
+            - row [ref=e550]:
+              - cell [ref=e551]:
+                - generic [ref=e552]:
+                  - img "Alibaba logo" [ref=e553]
+                  - generic [ref=e554]:
+                    - link "Qwen3.8 Max (0902)" [ref=e555] [cursor=pointer]:
+                      - /url: /models/qwen3-8-max/providers
+                    - generic [ref=e556]: Alibaba
+              - cell "< $0.01" [ref=e558]
+              - cell "< $0.01" [ref=e560]
+              - cell "$0.01" [ref=e562]
+              - cell "$0.01" [ref=e564]
+              - cell "1,000" [ref=e566]
+              - cell "$11.00" [ref=e568]
+            - row [ref=e570]:
+              - cell [ref=e571]:
+                - generic [ref=e572]:
+                  - img "DeepSeek logo" [ref=e573]
+                  - generic [ref=e574]:
+                    - link "DeepSeek V4.1 Flash 1017 (max)" [ref=e575] [cursor=pointer]:
+                      - /url: /models/deepseek-v4-1-flash-1017/providers
+                    - generic [ref=e576]: DeepSeek
+              - cell "< $0.01" [ref=e578]
+              - cell "< $0.01" [ref=e580]
+              - cell "< $0.01" [ref=e582]
+              - cell "< $0.01" [ref=e584]
+              - cell "1,000" [ref=e586]
+              - cell "$2.10" [ref=e588]
+            - row [ref=e590]:
+              - cell [ref=e591]:
+                - generic [ref=e592]:
+                  - img "Z AI logo" [ref=e593]
+                  - generic [ref=e594]:
+                    - link "GLM-5.3 (max)" [ref=e595] [cursor=pointer]:
+                      - /url: /models/glm-5-3/providers
+                    - generic [ref=e596]: Z AI
+              - cell "< $0.01" [ref=e598]
+              - cell "< $0.01" [ref=e600]
+              - cell "< $0.01" [ref=e602]
+              - cell "$0.01" [ref=e604]
+              - cell "1,000" [ref=e606]
+              - cell "$8.00" [ref=e608]
+            - row [ref=e610]:
+              - cell [ref=e611]:
+                - generic [ref=e612]:
+                  - img "StepFun logo" [ref=e613]
+                  - generic [ref=e614]:
+                    - link "Step 5 Preview" [ref=e615] [cursor=pointer]:
+                      - /url: /models/step-5/providers
+                    - generic [ref=e616]: StepFun
+              - cell "< $0.01" [ref=e618]
+              - cell "< $0.01" [ref=e620]
+              - cell "< $0.01" [ref=e622]
+              - cell "$0.01" [ref=e624]
+              - cell "1,000" [ref=e626]
+              - cell "$5.05" [ref=e628]
+            - row [ref=e630]:
+              - cell [ref=e631]:
+                - generic [ref=e632]:
+                  - img "Kimi logo" [ref=e633]
+                  - generic [ref=e634]:
+                    - link "Kimi K3 (max)" [ref=e635] [cursor=pointer]:
+                      - /url: /models/kimi-k3/providers
+                    - generic [ref=e636]: Kimi
+              - cell "< $0.01" [ref=e638]
+              - cell "$0.01" [ref=e640]
+              - cell "$0.02" [ref=e642]
+              - cell "$0.03" [ref=e644]
+              - cell "1,000" [ref=e646]
+              - cell "$25.50" [ref=e648]
+            - row [ref=e650]:
+              - cell [ref=e651]:
+                - generic [ref=e652]:
+                  - img "Anthropic logo" [ref=e653]
+                  - generic [ref=e654]:
+                    - link "Claude Haiku 5.5 (max)" [ref=e655] [cursor=pointer]:
+                      - /url: /models/claude-haiku-5-5/providers
+                    - generic [ref=e656]: Anthropic
+              - cell "< $0.01" [ref=e658]
+              - cell "< $0.01" [ref=e660]
+              - cell "< $0.01" [ref=e662]
+              - cell "< $0.01" [ref=e664]
+              - cell "1,000" [ref=e666]
+              - cell "$0.85" [ref=e668]
+            - row [ref=e670]:
+              - cell [ref=e671]:
+                - generic [ref=e672]:
+                  - img "MiniMax logo" [ref=e673]
+                  - generic [ref=e674]:
+                    - link "MiniMax-M3.1-Flash" [ref=e675] [cursor=pointer]:
+                      - /url: /models/minimax-m3-1-flash/providers
+                    - generic [ref=e676]: MiniMax
+              - cell "< $0.01" [ref=e678]
+              - cell "< $0.01" [ref=e680]
+              - cell "< $0.01" [ref=e682]
+              - cell "< $0.01" [ref=e684]
+              - cell "1,000" [ref=e686]
+              - cell "$1.05" [ref=e688]
+            - row [ref=e690]:
+              - cell [ref=e691]:
+                - generic [ref=e692]:
+                  - img "Z AI logo" [ref=e693]
+                  - generic [ref=e694]:
+                    - link "GLM-5.3-Flash" [ref=e695] [cursor=pointer]:
+                      - /url: /models/glm-5-3-flash/providers
+                    - generic [ref=e696]: Z AI
+              - cell "< $0.01" [ref=e698]
+              - cell "< $0.01" [ref=e700]
+              - cell "< $0.01" [ref=e702]
+              - cell "< $0.01" [ref=e704]
+              - cell "1,000" [ref=e706]
+              - cell "$0.90" [ref=e708]
+            - row [ref=e710]:
+              - cell [ref=e711]:
+                - generic [ref=e712]:
+                  - img "Google logo" [ref=e713]
+                  - generic [ref=e714]:
+                    - link "Gemini 3.8 Flash (high)" [ref=e715] [cursor=pointer]:
+                      - /url: /models/gemini-3-8-flash/providers
+                    - generic [ref=e716]: Google
+              - cell "< $0.01" [ref=e718]
+              - cell "< $0.01" [ref=e720]
+              - cell "< $0.01" [ref=e722]
+              - cell "$0.01" [ref=e724]
+              - cell "1,000" [ref=e726]
+              - cell "$6.38" [ref=e728]
+            - row [ref=e730]:
+              - cell [ref=e731]:
+                - generic [ref=e732]:
+                  - img "Meta logo" [ref=e733]
+                  - generic [ref=e734]:
+                    - link "Muse Spark Open (xhigh)" [ref=e735] [cursor=pointer]:
+                      - /url: /models/muse-spark-open/providers
+                    - generic [ref=e736]: Meta
+              - cell "< $0.01" [ref=e738]
+              - cell "< $0.01" [ref=e740]
+              - cell "< $0.01" [ref=e742]
+              - cell "$0.01" [ref=e744]
+              - cell "1,000" [ref=e746]
+              - cell "$7.63" [ref=e748]
+            - row [ref=e750]:
+              - cell [ref=e751]:
+                - generic [ref=e752]:
+                  - img "Mistral logo" [ref=e753]
+                  - generic [ref=e754]:
+                    - link "Mistral Large 4 Preview" [ref=e755] [cursor=pointer]:
+                      - /url: /models/mistral-large-4/providers
+                    - generic [ref=e756]: Mistral
+              - cell "< $0.01" [ref=e758]
+              - cell "< $0.01" [ref=e760]
+              - cell "< $0.01" [ref=e762]
+              - cell "$0.01" [ref=e764]
+              - cell "1,000" [ref=e766]
+              - cell "$7.63" [ref=e768]
+            - row [ref=e770]:
+              - cell [ref=e771]:
+                - generic [ref=e772]:
+                  - img "OpenAI logo" [ref=e773]
+                  - generic [ref=e774]:
+                    - link "GPT-6 Luna (max)" [ref=e775] [cursor=pointer]:
+                      - /url: /models/gpt-6-luna/providers
+                    - generic [ref=e776]: OpenAI
+              - cell "< $0.01" [ref=e778]
+              - cell "< $0.01" [ref=e780]
+              - cell "< $0.01" [ref=e782]
+              - cell "< $0.01" [ref=e784]
+              - cell "1,000" [ref=e786]
+              - cell "$0.85" [ref=e788]
+            - row [ref=e790]:
+              - cell [ref=e791]:
+                - generic [ref=e792]:
+                  - img "Alibaba logo" [ref=e793]
+                  - generic [ref=e794]:
+                    - link "Qwen3.8 27B (xhigh)" [ref=e795] [cursor=pointer]:
+                      - /url: /models/qwen3-8-27b/providers
+                    - generic [ref=e796]: Alibaba
+              - cell "< $0.01" [ref=e798]
+              - cell "< $0.01" [ref=e800]
+              - cell "< $0.01" [ref=e802]
+              - cell "$0.01" [ref=e804]
+              - cell "1,000" [ref=e806]
+              - cell "$5.00" [ref=e808]
+            - row [ref=e810]:
+              - cell [ref=e811]:
+                - generic [ref=e812]:
+                  - img "Institute of Foundation Models logo" [ref=e813]
+                  - generic [ref=e814]:
+                    - link "K2 Horizon 375B A23B" [ref=e815] [cursor=pointer]:
+                      - /url: /models/k2-horizon-375b-a23b/providers
+                    - generic [ref=e816]: Institute of Foundation Models
+              - cell "$0.00" [ref=e818]
+              - cell "$0.00" [ref=e820]
+              - cell "$0.00" [ref=e822]
+              - cell "$0.00" [ref=e824]
+              - cell "1,000" [ref=e826]
+              - cell "$0.00" [ref=e828]
+            - row [ref=e830]:
+              - cell [ref=e831]:
+                - generic [ref=e832]:
+                  - img "Reflection logo" [ref=e833]
+                  - generic [ref=e834]:
+                    - link "Beam 1.0" [ref=e835] [cursor=pointer]:
+                      - /url: /models/reflection-beam/providers
+                    - generic [ref=e836]: Reflection
+              - cell "< $0.01" [ref=e838]
+              - cell "< $0.01" [ref=e840]
+              - cell "< $0.01" [ref=e842]
+              - cell "< $0.01" [ref=e844]
+              - cell "1,000" [ref=e846]
+              - cell "$3.85" [ref=e848]
+            - row [ref=e850]:
+              - cell [ref=e851]:
+                - generic [ref=e852]:
+                  - img "NVIDIA logo" [ref=e853]
+                  - generic [ref=e854]:
+                    - link "Nemotron 3.5 Super VL" [ref=e855] [cursor=pointer]:
+                      - /url: /models/nemotron-3-5-super-vl/providers
+                    - generic [ref=e856]: NVIDIA
+              - cell "< $0.01" [ref=e858]
+              - cell "< $0.01" [ref=e860]
+              - cell "< $0.01" [ref=e862]
+              - cell "< $0.01" [ref=e864]
+              - cell "1,000" [ref=e866]
+              - cell "$1.09" [ref=e868]
+            - row [ref=e870]:
+              - cell [ref=e871]:
+                - generic [ref=e872]:
+                  - img "Thinking Machines logo" [ref=e873]
+                  - generic [ref=e874]:
+                    - link "Inkling (xhigh)" [ref=e875] [cursor=pointer]:
+                      - /url: /models/inkling/providers
+                    - generic [ref=e876]: Thinking Machines
+              - cell "< $0.01" [ref=e878]
+              - cell "< $0.01" [ref=e880]
+              - cell "< $0.01" [ref=e882]
+              - cell "$0.01" [ref=e884]
+              - cell "1,000" [ref=e886]
+              - cell "$7.07" [ref=e888]
+    - region "Notifications alt+T"
+    - button "Back to top" [ref=e890] [cursor=pointer]
+    - generic [ref=e78]:
+      - generic [ref=e79]:
+        - link "Artificial Analysis" [ref=e81] [cursor=pointer]:
+          - /url: /
+        - generic [ref=e84]:
+          - paragraph [ref=e85]: Get notified about new articles
+          - generic [ref=e89]:
+            - generic [ref=e90]: Email address
+            - textbox "Email address" [ref=e91]:
+              - /placeholder: What's your email?
+            - button "Subscribe" [ref=e92] [cursor=pointer]
+        - paragraph [ref=e96]: Artificial Analysis
+        - generic [ref=e97]:
+          - generic [ref=e98]:
+            - paragraph [ref=e99]: Explore
+            - list [ref=e100]:
+              - listitem [ref=e101]:
+                - link "LLM Leaderboard" [ref=e102] [cursor=pointer]:
+                  - /url: /leaderboards/models
+              - listitem [ref=e103]:
+                - link "Image Arena" [ref=e104] [cursor=pointer]:
+                  - /url: /image/arena
+              - listitem [ref=e105]:
+                - link "Video Arena" [ref=e106] [cursor=pointer]:
+                  - /url: /video/arena
+              - listitem [ref=e107]:
+                - link "AI Agents" [ref=e108] [cursor=pointer]:
+                  - /url: /agents/coding-agents
+              - listitem [ref=e109]:
+                - link "Evaluations" [ref=e110] [cursor=pointer]:
+                  - /url: /evaluations
+          - generic [ref=e111]:
+            - paragraph [ref=e112]: Products
+            - list [ref=e113]:
+              - listitem [ref=e114]:
+                - link "Optima" [ref=e115] [cursor=pointer]:
+                  - /url: /optima
+              - listitem [ref=e116]:
+                - link "MicroEvals" [ref=e117] [cursor=pointer]:
+                  - /url: /microevals
+              - listitem [ref=e118]:
+                - link "Model Recommender" [ref=e119] [cursor=pointer]:
+                  - /url: /models/recommend
+              - listitem [ref=e120]:
+                - link "Data Playground" [ref=e121] [cursor=pointer]:
+                  - /url: /data-playground
+              - listitem [ref=e122]:
+                - link "Image Lab" [ref=e123] [cursor=pointer]:
+                  - /url: /image/image-lab
+          - generic [ref=e124]:
+            - paragraph [ref=e125]: Company
+            - list [ref=e126]:
+              - listitem [ref=e127]:
+                - link "About" [ref=e128] [cursor=pointer]:
+                  - /url: /about
+              - listitem [ref=e129]:
+                - link "Methodology" [ref=e130] [cursor=pointer]:
+                  - /url: /methodology
+              - listitem [ref=e131]:
+                - link "Contact" [ref=e132] [cursor=pointer]:
+                  - /url: /contact
+              - listitem [ref=e133]:
+                - link "Articles" [ref=e134] [cursor=pointer]:
+                  - /url: /articles
+              - listitem [ref=e135]:
+                - link "Careers" [ref=e136] [cursor=pointer]:
+                  - /url: /careers
+        - generic [ref=e137]:
+          - link "X" [ref=e138] [cursor=pointer]:
+            - /url: https://x.com/ArtificialAnlys
+          - link "LinkedIn" [ref=e142] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/artificial-analysis/
+          - link "YouTube" [ref=e146] [cursor=pointer]:
+            - /url: https://www.youtube.com/@ArtificialAnalysisAI
+          - link "Rednote" [ref=e150] [cursor=pointer]:
+            - /url: https://www.xiaohongshu.com/user/profile/69ea6345000000000d034c02
+          - link "Discord" [ref=e154] [cursor=pointer]:
+            - /url: https://discord.gg/Mk298GPZ7V
+      - generic [ref=e158]:
+        - paragraph [ref=e159]: © 2026 Artificial Analysis
+        - link "Terms of Use" [ref=e160] [cursor=pointer]:
+          - /url: /terms-of-use
+        - link "Data Platform Terms" [ref=e161] [cursor=pointer]:
+          - /url: https://artificialanalysiscdn.com/legal/ProDataPlatformTerms.pdf
+        - link "Privacy Policy" [ref=e162] [cursor=pointer]:
+          - /url: /privacy-policy
+        - combobox "Select language" [ref=e164] [cursor=pointer]: English
+  - alert [ref=e269]
