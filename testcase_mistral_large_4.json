@@ -1,0 +1,57 @@
+{
+  "name": "LLM Price Calculator - Mistral Large 4 Preview",
+  "description": "Automated test to verify LLM pricing calculation for Mistral Large 4 Preview",
+  "steps": [
+    {
+      "step_number": 1,
+      "action": "Navigate to LLM Price Calculator",
+      "url": "https://artificialanalysis.ai/tools/llm-price-calculator",
+      "expected_result": "Page loads successfully"
+    },
+    {
+      "step_number": 2,
+      "action": "Switch to Calculate by tokens tab",
+      "expected_result": "Tab is selected"
+    },
+    {
+      "step_number": 3,
+      "action": "Set Input tokens to 1000",
+      "input_field": "Input tokens",
+      "value": "1000",
+      "expected_result": "Value is set to 1000"
+    },
+    {
+      "step_number": 4,
+      "action": "Set Response tokens to 500",
+      "input_field": "Response tokens",
+      "value": "500",
+      "expected_result": "Value is set to 500"
+    },
+    {
+      "step_number": 5,
+      "action": "Set Reasoning tokens to 1000",
+      "input_field": "Reasoning tokens",
+      "value": "1000",
+      "expected_result": "Value is set to 1000"
+    },
+    {
+      "step_number": 6,
+      "action": "Set API calls to 1000",
+      "input_field": "API calls",
+      "value": "1000",
+      "expected_result": "Value is set to 1000"
+    },
+    {
+      "step_number": 7,
+      "action": "Click Calculate button",
+      "expected_result": "Calculation completes"
+    },
+    {
+      "step_number": 8,
+      "action": "Verify Mistral Large 4 Preview cost",
+      "expected_value": "$7.63",
+      "expected_result": "Cost matches expected value"
+    }
+  ],
+  "expected_outcome": "Mistral Large 4 Preview total cost is $7.63"
+}
