@@ -1,0 +1,31 @@
+test_case_id,category,description,model_name,input_tokens,response_tokens,reasoning_tokens,api_calls,expected_total_cost,expected_cost_per_call,is_valid
+"tc_001_happy_path_standard",happy_path,"Standard inputs with 1000 tokens for each field","Mistral Large 4 Preview",1000,500,1000,1000,"$7.63","$0.01",TRUE
+"tc_002_happy_path_low_tokens",happy_path,"Low token values (1 input, 1 response, 0 reasoning, 1 API call)","Mistral Large 4 Preview",1,1,0,1,"$0.00","$0.00",TRUE
+"tc_003_happy_path_high_tokens",happy_path,"High token values (10000 input, 5000 response, 10000 reasoning, 5000 API calls)","Mistral Large 4 Preview",10000,5000,10000,5000,"$76.30","$0.02",TRUE
+"tc_004_boundary_zero_input_tokens",boundary,"Input tokens set to 0","Mistral Large 4 Preview",0,500,1000,1000,"$0.00","$0.00",TRUE
+"tc_005_boundary_zero_response_tokens",boundary,"Response tokens set to 0","Mistral Large 4 Preview",1000,0,1000,1000,"$0.00","$0.00",TRUE
+"tc_006_boundary_zero_reasoning_tokens",boundary,"Reasoning tokens set to 0","Mistral Large 4 Preview",1000,500,0,1000,"$3.82","$0.01",TRUE
+"tc_007_boundary_zero_api_calls",boundary,"API calls set to 0","Mistral Large 4 Preview",1000,500,1000,0,"$0.00","$0.00",TRUE
+"tc_008_boundary_max_input_tokens",boundary,"Input tokens set to high value (100000)","Mistral Large 4 Preview",100000,50000,100000,10000,"$763.00","$0.08",TRUE
+"tc_009_boundary_max_response_tokens",boundary,"Response tokens set to high value (50000)","Mistral Large 4 Preview",10000,50000,10000,10000,"$477.50","$0.05",TRUE
+"tc_010_boundary_max_api_calls",boundary,"API calls set to high value (100000)","Mistral Large 4 Preview",1000,500,1000,100000,"$76.30","$0.76",TRUE
+"tc_011_edge_unicode_input_tokens",edge_case,"Input tokens as string with unicode characters (should be converted to int)","Mistral Large 4 Preview",1000,500,1000,1000,"$7.63","$0.01",TRUE
+"tc_012_edge_negative_input_tokens",edge_case,"Input tokens as negative value (invalid, should fail)","Mistral Large 4 Preview",-100,500,1000,1000,"N/A","N/A",FALSE
+"tc_013_edge_negative_response_tokens",edge_case,"Response tokens as negative value (invalid, should fail)","Mistral Large 4 Preview",1000,-500,1000,1000,"N/A","N/A",FALSE
+"tc_014_edge_negative_reasoning_tokens",edge_case,"Reasoning tokens as negative value (invalid, should fail)","Mistral Large 4 Preview",1000,500,-1000,1000,"N/A","N/A",FALSE
+"tc_015_edge_negative_api_calls",edge_case,"API calls as negative value (invalid, should fail)","Mistral Large 4 Preview",1000,500,1000,-1000,"N/A","N/A",FALSE
+"tc_016_edge_empty_input_tokens",edge_case,"Input tokens empty (invalid, should fail)","Mistral Large 4 Preview", "",500,1000,1000,"N/A","N/A",FALSE
+"tc_017_edge_empty_response_tokens",edge_case,"Response tokens empty (invalid, should fail)","Mistral Large 4 Preview",1000,"",1000,1000,"N/A","N/A",FALSE
+"tc_018_edge_empty_reasoning_tokens",edge_case,"Reasoning tokens empty (invalid, should fail)","Mistral Large 4 Preview",1000,500,"",1000,"N/A","N/A",FALSE
+"tc_019_edge_empty_api_calls",edge_case,"API calls empty (invalid, should fail)","Mistral Large 4 Preview",1000,500,1000,"","N/A","N/A",FALSE
+"tc_020_edge_non_numeric_input",edge_case,"Input tokens as non-numeric string (invalid, should fail)","Mistral Large 4 Preview","abc",500,1000,1000,"N/A","N/A",FALSE
+"tc_021_edge_non_numeric_response",edge_case,"Response tokens as non-numeric string (invalid, should fail)","Mistral Large 4 Preview",1000,"xyz",1000,1000,"N/A","N/A",FALSE
+"tc_022_edge_non_numeric_reasoning",edge_case,"Reasoning tokens as non-numeric string (invalid, should fail)","Mistral Large 4 Preview",1000,500,"test",1000,"N/A","N/A",FALSE
+"tc_023_edge_non_numeric_api_calls",edge_case,"API calls as non-numeric string (invalid, should fail)","Mistral Large 4 Preview",1000,500,1000,"1k","N/A","N/A",FALSE
+"tc_024_edge_very_large_input_tokens",edge_case,"Input tokens set to extremely high value (1M)","Mistral Large 4 Preview",1000000,500000,1000000,100000,"$7630.00","$0.08",TRUE
+"tc_025_edge_float_input_tokens",edge_case,"Input tokens as float (1000.5, should be truncated or rounded)","Mistral Large 4 Preview",1000.5,500,1000,1000,"$7.63","$0.01",TRUE
+"tc_026_edge_special_chars_api_calls",edge_case,"API calls with special characters (1,000 formatted)","Mistral Large 4 Preview",1000,500,1000,"1,000","$7.63","$0.01",TRUE
+"tc_027_negative_zero_values",negative,"All input fields set to 0 (edge case for free cost)","Mistral Large 4 Preview",0,0,0,0,"$0.00","$0.00",TRUE
+"tc_028_negative_overflow_values",negative,"Extremely high values that might cause overflow (invalid logic)","Mistral Large 4 Preview",999999999999,999999999999,999999999999,999999999999,"N/A","N/A",FALSE
+"tc_029_negative_invalid_model",negative,"Non-existent model name (invalid, should fail)","Invalid Model",1000,500,1000,1000,"N/A","N/A",FALSE
+"tc_030_negative_whitespace_values",negative,"Input tokens with whitespace (should be trimmed)","Mistral Large 4 Preview"," 1000 ",500,1000,1000,"$7.63","$0.01",TRUE
